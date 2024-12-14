@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>что не было скучно жить</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="shortcut icon" href="iconka.jpg" type="image/png">
+  </head>
+ 
+  <body bgcolor="#293133">
+
+    <ul id="navbar">
+      <li><a href="titul.html">Главная</a></li>
+      <li><a href="фильмы.html">Фильмы</a>
+      <ul>
+        <li><a href="#">Новинки</a></li>
+        <li><a href="#">Все Фильмы</a></li>
+      </ul>
+    </li>
+      <li><a href="сериалы.html">Сериалы</a>
+       
+      </li>
+     
+    </li>
+      <li><a href="аниме.html">Аниме</a>
+    </li>
+   <li> 
+    </li>
+    </ul>
+
+    <!-- кнопка для входа -->
+    <button1 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход</button1>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть">&times;</span>
+  <form class="modal-content animate" action="../action_page.php">
+    <div class="container">
+      <h1>Вход</h1>
+      <p1>Пожалуйста, заполните эту форму, чтобы войти учетную запись.</p1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder=" Ведите Email" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder=" Ведите пароль" name="psw" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+<p></p>
+      <div class="clearfix">
+       <button type="submit" class="signupbtn" onclick="window.location.href = 'sozdat_akkaunt.html';">Создать аккаунт</button>
+        <button type="submit" class="signupbtn">Вход</button>
+      </div>
+    </div>
+  </form>
+<!-- script Вы также можете использовать следующий javascript для закрытия модального, щелкнув за пределами модального содержимого (а не только с помощью кнопки "x" или "отмена", чтобы закрыть его):  -->
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</div>
+<div class="block">
+  <img src="аниме картины/Истребитель демонов.jpg" width="100%" height="auto">
+  <h1>Истребитель демонов</h1>
+
+</div>
+<div class="text">
+<p> 
+    Эпоха Тайсё. Ещё с древних времён ходят слухи, что в
+     лесу обитают человекоподобные демоны, которые питаются людьми и 
+     выискивают по ночам новых жертв. Тандзиро Камадо — старший сын в семье,
+      потерявший отца и взявший на себя заботу о родных. Однажды он уходит в
+       соседний город, чтобы продать древесный уголь. Вернувшись утром, парень 
+       обнаруживает перед собой страшную картину: вся родня зверски убита, а 
+       единственная выжившая — младшая сестра Нэдзуко, обращённая в демона, но 
+       пока не потерявшая человечность. С этого момента начинается долгое и опасное 
+       путешествие Тандзиро и Нэдзуко, в котором мальчик намерен разыскать убийцу и узнать 
+       способ исцеления сестры.
+</p>
+</div>
+<div class="video">   
+  <video src="видео/Клинок, рассекающий демонов [Русский трейлер] _ Kimetsu no Yaiba [RUS].mp4" controls>
+    <p>Ваш браузер не поддерживает HTML5 видео. Используйте <a href="видео/Клинок, рассекающий демонов [Русский трейлер] _ Kimetsu no Yaiba [RUS].mp4">ссылку на видео</a> для доступа.</p>
+  </video>
+</div>
+
+<!-- подвал -->
+<footer>
+  <div class="waves">
+      <div class="wave" id="wave1"></div>
+  </div>
+  <ul class="social">
+      <li><a href="https://vk.com/public220754040"><img src = "https://free-png.ru/wp-content/uploads/2020/04/VK_Monochrome_Logo_t.png" width = "30" height = "30"></a></li>
+      <li><a href="https://www.tiktok.com/@taymer27?_t=8cWXyFCZd4b&_r=1"><img src="icons8-тикток-144.png" width = "45" height = "45"></ion-icon></a></li>
+      <li><a href="https://www.instagram.com/teymur.abdulazizov?r=nametag"><ion-icon name="logo-instagram"></ion-icon></a></li>
+  </ul>
+  <ul class="menu">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Фильмы</a></li>
+      <li><a href="#">Сериалы</a></li>
+      <li><a href="#">Мультфильм</a></li>
+      <li><a href="#">Дорамы</a></li>
+      <li><a href="#">Аниме</a></li>
+  </ul> 
+    <p>Абдулазизов Теймур 😈 | Савеко  Ебалашкин 😇</p>
+  <p>©2023 Приятного просмотра | Все права защищены</p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+
+
+  </body>
+  
+</html>

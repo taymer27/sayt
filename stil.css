@@ -1,0 +1,345 @@
+/* меню*/
+#navbar ul{
+	display: none;
+	background-color: #f90;
+	position: absolute;
+  width: 120px; /* нижний панель */
+	top: 100%;
+  }
+  #navbar li:hover ul { display: block; }
+  #navbar, #navbar ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  }
+  #navbar {
+    margin-top: 0px;
+    padding-top: 0px;
+	height: 40px;
+	background-color: #666;
+	padding-left: 25px;
+	min-width: 470px;
+  }
+  #navbar li {
+	float: left;
+	position: relative;
+	height: 100%;
+  }
+  #navbar li a {
+	display: block;
+	padding: 10px;
+	width: 120px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+  }
+  #navbar ul li { float: none; }
+  #navbar li:hover { background-color: #f90; }
+  #navbar ul li:hover { background-color: #666; }
+
+	/* абзацы*/
+p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    size: 14px;
+}
+.p1 {
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+  size: 14px;
+}
+h1{font-family: 'Times New Roman', Times,serif; font-size: 20px ;color:rgb(0, 0, 0);text-align: center;}
+label b1 {
+  color: white;
+
+ }  
+	/* кнопка входа*/
+	body {font-family: Arial, Helvetica, sans-serif;}
+             * {box-sizing: border-box;}
+
+/* body footer подвал */
+body footer{ 
+  display: flex;/*флексбокс сетка*/
+  flex-direction: column;/*направление главной оси*/
+ justify-content: flex-end;/*элементы в конце контейнера*/
+  }
+
+/* Поля ввода полной ширины */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Установите стиль для всех кнопок */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+button1 {
+  position: absolute;
+  right: 2.2%;
+  top: 0%;
+  background-color: #666;
+  color: white;
+  padding: 10px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+button1:hover{
+  background: #f90;
+}
+button:hover {
+  opacity:1;
+}
+/* Дополнительные стили для кнопки Отмена */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 25%;
+  margin: 40px 0px 20px 250px;
+  margin: 2% 0px 1.5% 16.5%;
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}        
+.container1 {   /* Модальный (фон)2 */
+  position: fixed; /* Оставаться на месте */
+  left: 20%;
+right: 20%;
+  top: 25%;
+  padding:  0px 5%;
+  width: 60%; /* Полная ширина */
+  height: auto; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: #29313393;   /*  Прозрачносить фона */
+  border-radius: 30px; 
+
+}
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: #29313393;   /*  Прозрачносить фона */
+  padding-top: 50px;
+} 
+/* Модальное содержание/бокс */
+.modal-content {
+  background-color: #fefefee7;
+  margin: 5% auto 15% auto; /* 5% сверху, 15% снизу и по центру */
+  border: 1px solid #888;
+  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  border-radius: 30px;
+
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* Кнопка закрытия (x) */
+.close {
+  position: absolute;
+  right: 150px;
+  top: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/* Добавить анимацию масштабирования */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+  }
+	
+  @keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+  }
+  
+  /* Подвал
+footer{ 
+    height: auto;
+    width: 100%;
+    background: #d47203;
+    padding: 5px ;
+    margin: 0px;
+    } */
+
+  url  {
+      margin: 0;/*обнуление отступов*/
+      padding: 0;/*обнуление полей*/
+      box-sizing: border-box;/*метод расчета размеров бокса*/
+      font-family: 'Poppins', sans-serif;/*название шрифта*/
+  }
+
+  footer{
+      position: relative;/*относительное позиционирование*/
+      width: 100%;/*на всю ширину*/
+      padding: 20px 50px;/*поля для контента*/
+      background: #3586ff;/*цвет футера*/
+      display: flex;
+      justify-content: center;/*в центре по горизонтали*/
+      align-items: center;/*в центре по вертикали*/
+      flex-direction: column;
+      margin-top: 100px;/*отступ сверху*/
+  }
+  footer .wave{
+      position: absolute;/*абсолютное позиционирование*/
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url(wave.png);/*картинка волны*/
+      background-size: 1000px 100px;/*ширина и высота волны*/
+  }
+  .social,
+  .menu{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      flex-wrap: wrap;/*разрешен перенос на новую строку*/
+  }
+  .social li,
+  .menu li{
+      list-style: none;/*удалить черные маркеры*/
+  }
+  .social li a {
+      font-size: 2em;/*размер иконок*/
+      color: #fff;/*цвет иконок*/
+      margin: 0 10px;
+      display: inline-block;/*отображать как строчно-блочный элемент*/
+      transition: 0.5s;/*плавный переход*/
+  }
+  .menu li a {
+      font-size: 1.2em;/*размер ссылок меню*/
+      color: #fff;/*цвет ссылок меню*/
+      opacity: 0.75;/*значение прозрачности*/
+      margin: 0 15px;
+      text-decoration: none;/*ссылка без подчеркивания*/
+      display: inline-block;
+  }
+  .menu li a:hover {
+      opacity: 1;
+  }
+  footer p {
+      color: #fff;
+      text-align: center;
+      margin-top: 15px;
+      font-size: 1.1em;
+  }
+
+  
+
+  .block{
+
+    display:inline-block;
+    color: #000000;
+    background-color: #ffffff;
+    border: #d47203;
+  width: 400px;
+  height: 500px;
+  margin: 3% 5% 3% 5%;
+  cursor:pointer;  
+  text-decoration: none;
+  text-align: center;
+  border-radius: 9px;
+  }
+  .block p{
+    color: #000000;
+  }
+  .block h1{
+    color: #ffffff;
+    font-size: 24px;
+  }
+.block img{
+border-radius: 9px;
+}
+.video{
+  width: 1100px;
+  height: 700px;
+  background-color: #f1f1f1;
+  margin: 3% 25% 3% 25%;
+}
+.text{
+  float: right;
+  width: 1100px;
+  height: 500px;
+  margin: 3% 5% 3% 5%;
+  background-color: #ffffff4b;
+  border-radius: 9px;
+  text-align:justify;
+  vertical-align: middle;
+  padding: 25px;
+}
+.text p{
+  color:#f1f1f1;
+  font-size: 25px;
+}
+.block p{
+  color:#f1f1f1;
+  font-size: 19px;
+}
+
+  
